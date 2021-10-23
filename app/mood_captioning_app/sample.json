@@ -1,0 +1,20 @@
+[
+    {
+        "subtitle": "sample text here",
+        "timestamp-start": "00:00:00,000",
+        "timestamp-end": "00:00:01,500",
+        "mood-code": 1
+    },
+    {
+        "subtitle": "sample text here",
+        "timestamp-start": "00:00:00,000",
+        "timestamp-end": "00:00:01,500",
+        "mood-code": 1
+    },
+    {
+        "subtitle": "sample text here",
+        "timestamp-start": "00:00:00,000",
+        "timestamp-end": "00:00:01,500",
+        "mood-code": 1
+    }
+]

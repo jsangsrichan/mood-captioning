@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mood_captioning_flutter/components/chewie_list_item.dart';
+import 'package:video_player/video_player.dart';
 
 import 'side_bar.dart';
 
@@ -12,9 +14,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFF2F3F7),
+      ),
       title: 'Flutter Demo',
-      home: MainScreen(),
+      home: const MainScreen(),
     );
   }
 }
@@ -24,13 +29,16 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: const <Widget>[
-      Expanded(child: SideLayout()),
-      Expanded(
-        flex: 4,
-        child: View(),
-      ),
-    ]);
+    return Container(
+      color: const Color(0xFFF2F3F7),
+      child: Row(children: const <Widget>[
+        Expanded(child: SideLayout()),
+        Expanded(
+          flex: 4,
+          child: View(),
+        ),
+      ]),
+    );
   }
 }
 
@@ -40,14 +48,52 @@ class View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(20),
       color: const Color(0xFFF2F3F7),
       child: Scaffold(
         body: Column(
-          children: const <Widget>[
-            Text('Title'),
+          children: <Widget>[
+            Expanded(
+              child: ChewieListItem(
+                videoPlayerController: VideoPlayerController.network(
+                  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+                ),
+                looping: true,
+              ),
+            ),
+            // Expanded(
+            //   child: ChewieListItem(
+            //     videoPlayerController: VideoPlayerController.asset(
+            //       'assets/test_clip.mp4',
+            //     ),
+            //     looping: true,
+            //   ),
+            // ),
+            const SubtitleWidget(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class SubtitleWidget extends StatelessWidget {
+  const SubtitleWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.only(top: 35, bottom: 40),
+      child: Column(children: const <Widget>[
+        Text(
+          'This is a sample sentence for the subtitle.',
+          style: TextStyle(
+            fontFamily: 'Lora',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
+      ]),
     );
   }
 }

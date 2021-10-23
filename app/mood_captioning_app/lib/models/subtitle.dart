@@ -1,9 +1,24 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+
+class Subtitles {
+  final List<Subtitle> subtitles;
+
+  Subtitles({required this.subtitles});
+
+  factory Subtitles.fromJson(List<dynamic> parsedJson) {
+    List<Subtitle> subtitles = [];
+    subtitles = parsedJson.map((i) => Subtitle.fromJson(i)).toList();
+
+    return Subtitles(subtitles: subtitles);
+  }
+}
 
 class Subtitle {
   String text;
-  DateTime timestampStart;
-  DateTime timestampEnd;
+  String timestampStart;
+  String timestampEnd;
   int moodCode;
 
   Subtitle(
@@ -15,8 +30,8 @@ class Subtitle {
   factory Subtitle.fromJson(Map<String, dynamic> json) {
     return Subtitle(
         text: json['text'],
-        timestampStart: json['timestampStart'],
-        timestampEnd: json['timestampStart'],
-        moodCode: json['moodCode']);
+        timestampStart: json['timestamp-start'],
+        timestampEnd: json['timestamp-end'],
+        moodCode: json['mood-code']);
   }
 }

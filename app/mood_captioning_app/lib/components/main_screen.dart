@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'components/side_bar.dart';
+import 'side_bar.dart';
 
 void main() {
   runApp(const MyApp());

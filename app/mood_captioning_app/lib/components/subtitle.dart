@@ -35,7 +35,7 @@ class _SubtitleWidgetState extends State<SubtitleWidget> {
     // _now = _timeToString(DateTime.now());
     _now = subtitles.subtitles[0].text;
     _moodColor = getMoodColor(subtitles.subtitles[0].mood);
-    _everySecond = Timer.periodic(const Duration(seconds: 5), (Timer t) {
+    _everySecond = Timer.periodic(const Duration(seconds: 3), (Timer t) {
       if (!mounted) return;
       setState(() {
         // _now = _timeToString(DateTime.now());
@@ -46,11 +46,11 @@ class _SubtitleWidgetState extends State<SubtitleWidget> {
     });
   }
 
-  String _timeToString(DateTime now) {
-    String timeString =
-        "${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}:${now.second.toString().padLeft(2, '0')}";
-    return timeString;
-  }
+  // String _timeToString(DateTime now) {
+  //   String timeString =
+  //       "${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}:${now.second.toString().padLeft(2, '0')}";
+  //   return timeString;
+  // }
 
   Color getMoodColor(String mood) {
     if (mood == 'calm') {
@@ -88,15 +88,16 @@ class _SubtitleWidgetState extends State<SubtitleWidget> {
         child: GestureDetector(
             onTap: () {},
             child: Container(
+                padding: EdgeInsets.symmetric(vertical: 20),
                 child: Text(
-              _now,
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                color: _moodColor,
-                fontFamily: 'Lora',
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),
-            ))));
+                  _now,
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: _moodColor,
+                    fontFamily: 'Lora',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ))));
   }
 }

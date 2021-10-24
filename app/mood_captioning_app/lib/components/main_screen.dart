@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mood_captioning_flutter/components/chewie_list_item.dart';
 import 'package:mood_captioning_flutter/components/subtitle.dart';
-import 'package:video_player/video_player.dart';
+import 'package:mood_captioning_flutter/components/video_player.dart';
 
 import 'side_bar.dart';
 
@@ -53,24 +52,17 @@ class View extends StatelessWidget {
       color: const Color(0xFFF2F3F7),
       child: Scaffold(
         body: Column(
-          children: <Widget>[
+          children: const <Widget>[
             Expanded(
-              child: ChewieListItem(
-                videoPlayerController: VideoPlayerController.network(
-                  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                ),
-                looping: true,
-              ),
+              // child: ChewieListItem(
+              //   videoPlayerController: VideoPlayerController.network(
+              //     'https://player.vimeo.com/external/638328474.hd.mp4?s=555457585a107b8e45137319b0c5144502eb4ba8&profile_id=174',
+              //   ),
+              //   looping: true,
+              // ),
+              child: VideoPlayerScreen(),
             ),
-            // Expanded(
-            //   child: ChewieListItem(
-            //     videoPlayerController: VideoPlayerController.asset(
-            //       'assets/test_clip.mp4',
-            //     ),
-            //     looping: true,
-            //   ),
-            // ),
-            const SubtitleView(),
+            // SubtitleView(),
           ],
         ),
       ),

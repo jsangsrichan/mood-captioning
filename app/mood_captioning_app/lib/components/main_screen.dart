@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mood_captioning_flutter/components/chewie_list_item.dart';
+import 'package:mood_captioning_flutter/components/subtitle.dart';
 import 'package:video_player/video_player.dart';
 
 import 'side_bar.dart';
@@ -69,7 +70,7 @@ class View extends StatelessWidget {
             //     looping: true,
             //   ),
             // ),
-            const SubtitleWidget(),
+            const SubtitleView(),
           ],
         ),
       ),
@@ -77,22 +78,15 @@ class View extends StatelessWidget {
   }
 }
 
-class SubtitleWidget extends StatelessWidget {
-  const SubtitleWidget({Key? key}) : super(key: key);
+class SubtitleView extends StatelessWidget {
+  const SubtitleView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 35, bottom: 40),
       child: Column(children: const <Widget>[
-        Text(
-          'This is a sample sentence for the subtitle.',
-          style: TextStyle(
-            fontFamily: 'Lora',
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+        SubtitleWidget(),
       ]),
     );
   }

@@ -6,7 +6,7 @@ class SideLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String description =
-        "Mood Captioning is an application to illustrate different emotions through subtitle!";
+        "Mood Captioning is an application to illustrate different emotions through subtitles!";
     return Container(
       color: const Color(0xffffffff),
       child: Expanded(
@@ -98,7 +98,7 @@ class ColorKeys extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Column(
         children: <Widget>[
-          makeColorKey('neutral', const Color(0xFFC47556)),
+          makeColorKey('neutral', Colors.black),
           const SizedBox(height: 10),
           makeColorKey('calm', const Color(0xFF3B6362)),
           const SizedBox(height: 10),
@@ -106,7 +106,7 @@ class ColorKeys extends StatelessWidget {
           const SizedBox(height: 10),
           makeColorKey('sad', const Color(0xFFB5C5BB)),
           const SizedBox(height: 10),
-          makeColorKey('angry', const Color(0xFFF2E8C4)),
+          makeColorKey('angry', const Color(0xFFC47556)),
           const SizedBox(height: 10),
           makeColorKey('fear', const Color(0xFFC5BFA5)),
           const SizedBox(height: 10),

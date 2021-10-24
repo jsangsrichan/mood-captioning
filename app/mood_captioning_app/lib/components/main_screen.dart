@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mood_captioning_flutter/components/subtitle.dart';
-import 'package:mood_captioning_flutter/components/video_player.dart';
+import 'package:chewie/chewie.dart';
+import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
 
+import 'chewie_list_item.dart';
 import 'side_bar.dart';
 
 void main() {
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFF2F3F7),
       ),
-      title: 'Flutter Demo',
+      title: 'Mood Captioning',
       home: const MainScreen(),
     );
   }
@@ -52,17 +55,16 @@ class View extends StatelessWidget {
       color: const Color(0xFFF2F3F7),
       child: Scaffold(
         body: Column(
-          children: const <Widget>[
+          children: <Widget>[
             Expanded(
-              // child: ChewieListItem(
-              //   videoPlayerController: VideoPlayerController.network(
-              //     'https://player.vimeo.com/external/638328474.hd.mp4?s=555457585a107b8e45137319b0c5144502eb4ba8&profile_id=174',
-              //   ),
-              //   looping: true,
-              // ),
-              child: VideoPlayerScreen(),
+              child: ChewieListItem(
+                videoPlayerController: VideoPlayerController.network(
+                  'https://player.vimeo.com/external/638328474.hd.mp4?s=555457585a107b8e45137319b0c5144502eb4ba8&profile_id=174',
+                ),
+                looping: true,
+              ),
             ),
-            // SubtitleView(),
+            const SubtitleView(),
           ],
         ),
       ),

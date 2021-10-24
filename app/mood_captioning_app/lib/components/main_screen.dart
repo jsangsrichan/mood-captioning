@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mood_captioning_flutter/components/subtitle.dart';
-import 'package:chewie/chewie.dart';
-import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 import 'chewie_list_item.dart';
@@ -14,7 +12,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

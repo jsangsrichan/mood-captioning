@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mood-captioning",
+  "private_key_id": "a0c344f1185d5ef8116cbcea26aba2295df28e16",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDoQuYliUKNVw1j\nvvKXzG733ZXSJRXH8YW+UkDQ4VuquWk9VPHktdYVgQDRck+dDNRs+ZmhXB3UKq73\nVwsaHQK2GjvVAaAkHIMLWG7bTtos2WW8lMNtvbM6nU0nEYxpkOOpg145ZabDJ2rU\n+DXTTXRibYL4rjwBpwo1iCLyI/2oRrIK84wf9WTq3sPrHmcvV+vay4XwADO/KCcP\nxJWXHzC4qfvn1d6bObbmRiwe2audhrlUg1NYDLxqrmYBgNgw6FRjo4ATRiWRihmg\n3cieMa1N33erPhPoxrYDgBp+ma8wrYyWr3m48wT4qjGUUCeXrP128Ieu8GuRv6VS\nZwDo/G+1AgMBAAECggEAI9n2aj3f7YRN903JZurHXZsGc4Ew9a46OFC8W4x7GK/K\nZw1efLDKzS1JYeB/bzJvSdZUw2Zo3lABC6yTyfdHbLJA9mtr+5cBGAu8VOg835ER\nK1pajkKAJiCTgQqBk5FUwFzxpZzOGy/8RXJ+Oycou2wZvDwyMV5w7NFzn3qJvuMb\nb6HbZFCtkSG9nBk8iL8XRXjvGFrnMYfLKFKkxZiYQek0EiFoovzZcwEVyhphsVJL\nlyY7BjiQms/DjIuQWvq0Wqq+bTSH6jae0P4xPTa0reM9kJrIB6zD3WqDBOGIkNmu\nwh1h+xJZPYcTA8iEVY7K1nk7jT/OEdQTXrxpJo4NUwKBgQD5fulzXWpKlWuM73Sy\nxRzxhKr5TXpj9wsDD3Twh9UiNlHpFcLat46P39r41sqm+Q1KPjXFNBmjOYLwisiW\no3aDYs14LsF8xFtKpD1t/G+FjOPpwUzJzPrHH/T+zNv/mNSQACsVGV4Sfx1eRL5+\nAMr0cvMflbxX2MIunfDHpGh6wwKBgQDuUPe+uaRu1vM5MnrK3bYWR/eqbw8ISIZ/\nXZ2BOo/O2gjduW09xWPnqIQBZPIEtG8v7cv3lEfi7j4sBaU1FYA9qG92j7kWEiqL\nMX2OfH4SdwLMG3l7rhMqFnQsk32Q5UpYs+tQgZgi4lfEHBZY8P+s6WqwqOP1YawU\nJZ1lZfOUJwKBgQC4g9d67lcxmZfUvzL7EzP4mjkn7tjZHVcTiFbfnFVP3ARv8RwO\nTTotxUxYQ+HT4tSlV6TEl2dug5YG91ypq3J2cJesjkeiUkWByj10HgEML8pOkhqM\nFABTS5sQ5ci+GvT5GmbCT+R2oXPCx+xpm4R9jJWpgj+saC4T89Kik0CBqQKBgQCE\ntnJAtADt+KXZ5FKdRnpwTgON1er5IepEY02i+Ym8F494ahp7m8DW8PESFbTxCcoh\nVruPU/P0W9gji8FEnoSb0YDA9aiMsfEfMqBJCOrsPXpBT8uHJJlnhrmLWVdDqWyN\nmSQh4Qln48QcYcfQH+VB1Xqkhmjr7Uh2r7vHC89pYQKBgQDMGlJqSbmBCk1OBWa0\ny+LLa0B+7bJ4is0K9jdOHVAnY96AjZEduwtdxaoKZL2gl5dk/o2Qob5YeBMQ8hwE\nprJQw0ee11We04FTEpro61R6aeSxwNuTDQJZIPMfCWVGoS+WH3/W8xqH5YKS7nO4\nfLhDmqn4YCkqEjhJXjp1RwhA1A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "closed-captioning@mood-captioning.iam.gserviceaccount.com",
+  "client_id": "111425450658327624141",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/closed-captioning%40mood-captioning.iam.gserviceaccount.com"
+}
